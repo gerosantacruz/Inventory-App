@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electron Inventory app</title>
+    <link rel="stylesheet" href="./bootstrap.min.css"/>
+    <link rel="stylesheet" href="./app.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 p-2 my-auto">
+                <form class="card card body" id="pr">
+                    <div class="form-group">
+                        <input type="text" 
+                        class="form-control" 
+                        id="name" 
+                        autofocus 
+                        placeholder="Prosuct's name"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" 
+                        class="form-control" 
+                        id="price" 
+                        step="any"
+                        autofocus 
+                        placeholder="Product's price"/>
+                    </div>
+                    <div class="form-group">
+                        <textarea  id="description"
+                        rows="3" 
+                        placeholder="Product's description">
+                    </textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Save
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div id="products">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src='./app.js'>
+    </script>
+</body>
+</html>
